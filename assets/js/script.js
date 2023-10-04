@@ -31,3 +31,40 @@ function otraFuncion() {
 }
 
 let entrada2 = "Hoisting";
+
+function convertirMay() {
+
+  let cadena = document.getElementById("par_str").innerHTML;
+  alert(cadena);
+  alert(cadena.toUpperCase());
+  console.log(cadena.toLowerCase());
+}
+
+function contarCaracteres () {
+  let cantidad = document.getElementById("par_str").innerHTML.toLowerCase().length;
+  console.log(cantidad);
+}
+
+function repetido () {
+  let texto = document.getElementById("par_str").innerHTML.repeat(3);
+  console.log(texto);
+}
+
+function reemplazar () {
+  let texto = document.getElementById("par_str").innerHTML.replace("sarasa", "lorem");
+  console.log(texto);
+}
+
+function parsear() {
+  let numero1 = "44";
+  let numero2 = "44asd3";
+
+  let nro1 = parseInt(numero1);
+  let nro2 = parseInt(numero2);
+
+  console.log("numero1=44 - valor: " + nro1);
+  console.log("numero2=44asd3 - valor: " + nro2);
+
+  console.log("Number de 44 : " + Number(numero1));
+  console.log("Number de 44asd3 : " + Number(numero2));
+}
