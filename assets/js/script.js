@@ -68,3 +68,36 @@ function parsear() {
   console.log("Number de 44 : " + Number(numero1));
   console.log("Number de 44asd3 : " + Number(numero2));
 }
+
+function oper() {
+  let nro1 = 20;
+  let nro2 = 8;
+
+  let total = nro1 + nro2;
+  console.log("La suma de nro1 + nro2 = " + total);
+
+  total = nro1 - nro2;
+  console.log("La resta de nro1 - nro2 = " + total);
+
+  total = nro1 * nro2;
+  console.log("La multiplicación del nro1 x nro2 = " + total);
+
+  total = nro1 / nro2;
+  console.log("La división del nro1 por el nro2 es de = " + total);
+
+  total = nro1 % nro2;
+  console.log("El módulo de la división de nro1 x nro2 = " + total);
+
+}
+
+
+function asignacion() {
+
+  let numero = 17;
+
+  numero += 10;
+
+  console.log(numero);
+
+
+}
