@@ -106,3 +106,64 @@ function agrandarTexto() {
   document.getElementById('demo').style.fontSize='35px';
   document.getElementById('demo').style.color='green';
 }
+
+function preguntar() {
+  //función prompt() sirve para mostrar una caja de texto en el navegador
+  //para que el visitante ingrese algún dato( el nombre )
+  let nombre = prompt("Cuál es tu nombre?");
+
+
+  //función alert para que muestre el mensaje de bienvenida
+  //junto con nuestro nombre.
+  alert("Bienvenido/a: " + nombre);
+
+  //enviamos la variable nombre a la consola para que me muestre su valor.
+  console.log("Valor de la variable nombre: " + nombre);
+
+}
+
+function variables() {
+  nombre = 'Julián';
+  var numero = 23;
+
+  let nombre2 = 'Julio';
+  console.log(nombre2);
+
+  nombre2 = 'Julieta';
+  console.log(nombre2);
+
+  const PI = 3.14;
+  console.log(PI);
+
+  PI = 3.15;
+  console.log(PI);
+}
+
+function tipos() {
+
+  let numero = 23;
+  //console.log(numero);
+  let cadena = "texto de ejemplo";
+  //console.log(cadena);
+  let esMayor = true;
+  //console.log(esMayor);
+  let dt = {
+    nombre : "Leonel",
+    apellido : "Scaloni",
+    edad : 33
+  }
+
+  alert(numero);
+  console.log(numero);
+
+}
+
+function cadena() {
+  let cantidad = document.getElementById('texto').innerHTML.length;
+  console.log("La cantidad de caracteres del párrafo es de: " + cantidad);
+}
+
+function mayusculas() {
+  let may = document.getElementById('texto').innerHTML.toUpperCase();
+  console.log(may);
+}
