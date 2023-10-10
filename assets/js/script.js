@@ -101,3 +101,8 @@ function asignacion() {
 
 
 }
+
+function agrandarTexto() {
+  document.getElementById('demo').style.fontSize='35px';
+  document.getElementById('demo').style.color='green';
+}
