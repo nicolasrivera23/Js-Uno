@@ -178,3 +178,43 @@ function mayusculas() {
   let may = document.getElementById('texto').innerHTML.toUpperCase();
   console.log(may);
 }
+
+function compar() {
+
+  let comp1 = 12 > 10;
+  console.log("12 > 10 ? : " + comp1);
+
+  let comp2 = 6 < 10;
+  console.log("6 < 10 ? : " + comp2);
+
+  let res1 = 125 >= 125;
+  let res2 = 10 <= 10;
+
+  console.log("125 >= 125 ? : " + res1);
+  console.log("10 <= 10 ? : " + res2);
+
+  let re = '10' == 10;
+  console.log("10 string es igual a 10 numérico? : " + re);
+
+  let re2 = '20' != 20;
+  console.log("20 string es distinto a 20 numérico? : " + re2);
+
+  let r1 = 10 === 10;
+  console.log("10 n es igual a 10 n? : " + r1);
+
+  let r2 = 20 !== 'Hola';
+  console.log("20 numérico es distinto a 'Hola' ? : " + r2 );
+}
+
+
+function incdec() {
+
+  let nro = 10;
+
+  console.log(++nro);
+
+  let nro1 = 15;
+  console.log(nro1++);
+  console.log(nro1++);
+  console.log(nro1++);
+}
