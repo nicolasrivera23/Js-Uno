@@ -56,17 +56,26 @@ function reemplazar () {
 }
 
 function parsear() {
+
+  //Creo las variables del tipo String y le asigno un valor mediante el operador =
   let numero1 = "44";
   let numero2 = "44asd3";
+  let numero3 = "3.14F";
 
+  //declaramos variables del tipo let para guardar el valor númerico 
+  //que obtenemos luego de transformar el string a número 
+  //mediante el método de JS parseInt
   let nro1 = parseInt(numero1);
   let nro2 = parseInt(numero2);
+  let nro3 = parseFloat(numero3);
 
-  console.log("numero1=44 - valor: " + nro1);
-  console.log("numero2=44asd3 - valor: " + nro2);
+  //
+  console.log("numero1 : '44' - valor: " + nro1);
+  console.log("numero2 : '44asd3' - valor: " + nro2);
+  console.log("numero3 : '3.14F' - valor: " + nro3);
 
-  console.log("Number de 44 : " + Number(numero1));
-  console.log("Number de 44asd3 : " + Number(numero2));
+  console.log("Number de '44' : " + Number(numero1));
+  console.log("Number de '44asd3' : " + Number(numero2));
 }
 
 function oper() {
@@ -93,11 +102,16 @@ function oper() {
 
 function asignacion() {
 
-  let numero = 17;
-
+  let numero = 15;
   numero += 10;
+  console.log("Adición: " + numero);
 
-  console.log(numero);
+  numero = 15;
+
+  numero -= 10;
+  console.log("Sustracción: " + numero);
+
+  //Tarea hacer las demás operaciones * - / - % - **
 
 
 }
@@ -140,7 +154,6 @@ function variables() {
 }
 
 function tipos() {
-
   let numero = 23;
   //console.log(numero);
   let cadena = "texto de ejemplo";
@@ -152,10 +165,8 @@ function tipos() {
     apellido : "Scaloni",
     edad : 33
   }
-
   alert(numero);
   console.log(numero);
-
 }
 
 function cadena() {
