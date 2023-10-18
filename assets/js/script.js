@@ -218,3 +218,107 @@ function incdec() {
   console.log(nro1++);
   console.log(nro1++);
 }
+
+function log() {
+  let nro1 = 12;
+  let nro2 = 15;
+  let nro3 = 22;
+
+  //AND && Sólo devuelve true si todas las comparaciones son verdaderas
+  let resultado = (nro1 < 12) && (nro3 >= 20);
+  console.log("Operador && " + resultado);
+
+  //|| OR Devuelve true si al menos una condición es verdadera
+  let resultado2 = (nro1 < 12) || (nro3 >= 20);
+  console.log("Operador || " + resultado2);
+
+  //! Invierte el valor booleano asignado
+  
+  console.log("Operador NOT ! = " + !resultado2);
+}
+
+function iff() {
+
+  //Dato Hardcodeado
+  let edad = 18;
+
+  if (edad >= 18) {
+    console.log("Es mayor se puede inscribir")
+    console.log("Sentencia booleana verdadera, entro en el if");
+  } else {
+    console.log("Es menor, no se puede inscribir")
+    console.log("Sentencia booleana falsa, entro en el else");
+  }
+}
+
+function ifelse() {
+  if (10 > 6) {
+    //se ejecuta solo si 10 es mayor que 6
+    console.log("Bloque if");
+  } else if(6 < 7) {
+    //se ejecuta si el if es falso y si la condición booleana se cumple
+    console.log("Bloque if-else");
+  } else {
+    //se ejecuta si los demas bloques anteriores son falsos
+    console.log("Bloque else")
+  }
+}
+
+function swi() {
+  let condition = 'blue';
+
+  switch(condition) {
+
+    case 'red':
+      console.log("El jean es rojo");
+      break;
+    case 'blue':
+      console.log("El jean es azul");
+      break;
+    case 'yellow':
+      console.log("El jean es amarillo");
+      break;
+    default:
+      console.log("No tengo de ese color");
+      break;
+  }
+}
+
+//Sentencia simplificada del bloque if / else
+function ter() {
+  let valor = 23;
+  let resultado = valor >= 13 ? 'Es mayor que 13' : 'Es menor que 13';
+  console.log(resultado);
+}
+
+function fort() {
+  // 1. declaramos una var y la inicializamos en cero
+  // 2. El bucle se ejecuta mientras i sea menor a 10
+  // 3. Incremento la variable en una unidad.
+  for(let i = 0; i < 10; i++) {
+    console.log("El valor de i es : " + i);
+  }
+}
+
+function whi() {
+
+  let condicion = Number(prompt('1. Ver Saldo\n 0. Salir'));
+
+  while(condicion != 0) {
+
+    switch(condicion) {
+      case 1:
+        alert('Su saldo es de 0.00$ . Estás más pobre que el chavo');
+        condicion = 0;
+        break;
+      default :
+      alert('La opción es incorrecta vuelva a elegir');
+      break;
+    }
+    condicion = Number(prompt('1. Ver Saldo\n 0. Salir'));
+  }
+
+}
+
+
+
