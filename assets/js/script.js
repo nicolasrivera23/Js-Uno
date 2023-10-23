@@ -386,5 +386,15 @@ let resultado = (a, b) => {
   console.log(a + b);
 }
 
+function elemid() {
+  //invoco al nodo raíz documento , le pido que me traiga el elemento cuyo id es titulo 
+  //prueba y una vez que lo obtengo modifico su estilo en particular su color de texto;
+  document.getElementById('tituloprueba').style.color = 'yellow';
+  let texto = document.getElementById('tituloprueba').innerText;
+  let texto2 = document.getElementById('tituloprueba');
+  console.log(texto);
+  console.log(texto2);
+}
+
 
 
