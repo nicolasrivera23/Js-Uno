@@ -301,11 +301,8 @@ function fort() {
 }
 
 function whi() {
-
   let condicion = Number(prompt('1. Ver Saldo\n 0. Salir'));
-
   while(condicion != 0) {
-
     switch(condicion) {
       case 1:
         alert('Su saldo es de 0.00$ . Estás más pobre que el chavo');
@@ -317,7 +314,76 @@ function whi() {
     }
     condicion = Number(prompt('1. Ver Saldo\n 0. Salir'));
   }
+}
 
+function suma() {
+  console.log("Suma llamada desde el Event Listener = " + (30 + 5) );
+}
+
+function encimaCursor() {
+  console.log("Encima del elemento " + typeof(x));
+}
+
+function fueraCursor() {
+  console.log("Fuera del elemento " + typeof(x));
+  
+}
+
+function msjKeyPress() {
+  alert("Se presionó una tecla");
+}
+
+
+var x = document.getElementById('evhand');
+x.addEventListener("click", suma);
+x.addEventListener("mouseover", encimaCursor);
+x.addEventListener("mouseout" , fueraCursor);
+
+
+document.addEventListener(
+  "keypress", msjKeyPress
+);
+
+
+function funex() {
+
+  //declaramos una variable del tipo let con el nombre resultado
+  // y le asigamos el valor de lo que me devuelve la función.
+  let resultado = function (a , b) {
+    return a + b;
+  }
+
+  console.log(resultado(11, parseInt('22')));
+
+}
+
+function nuevaFuncion() {
+
+  funex();
+  //Sigue el algoritmo
+
+}
+
+function ret() {
+  let nombre = 'Julio';
+  let apellido = 'Verne';
+  let bienvenida = "Bienvenid@ " + apellido + ", " + nombre;
+  return bienvenida;
+}
+
+function bienvenida() {
+  console.log("Ingresaste correctamente al sistema..");
+  console.log(ret());
+}
+
+function params(a, b) {
+  let resultado = a + b;
+  console.log(resultado);
+  return resultado;
+}
+
+let resultado = (a, b) => {
+  console.log(a + b);
 }
 
 
