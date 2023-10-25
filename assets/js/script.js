@@ -1,5 +1,6 @@
-  //constante
-  const PI = 3.1416;
+//constante ámbito/scope global
+const PI = 3.1416;
+
 function preguntarNombre() {
   //declaramos una variable y le asignamos el valor que el usuario ingresa en el prompt
   let entrada = prompt('Ingresa tu nombre');
@@ -339,11 +340,11 @@ x.addEventListener("click", suma);
 x.addEventListener("mouseover", encimaCursor);
 x.addEventListener("mouseout" , fueraCursor);
 
-
+/*
 document.addEventListener(
   "keypress", msjKeyPress
 );
-
+*/
 
 function funex() {
 
@@ -389,12 +390,38 @@ let resultado = (a, b) => {
 function elemid() {
   //invoco al nodo raíz documento , le pido que me traiga el elemento cuyo id es titulo 
   //prueba y una vez que lo obtengo modifico su estilo en particular su color de texto;
-  document.getElementById('tituloprueba').style.color = 'yellow';
-  let texto = document.getElementById('tituloprueba').innerText;
-  let texto2 = document.getElementById('tituloprueba');
-  console.log(texto);
-  console.log(texto2);
+  let hache3 = document.getElementById('tituloprueba');
+  hache3.style.color = 'yellow';
+  hache3.style.backgroundColor = 'green';
 }
 
+function crearAgregar() {
+
+  let elemento = document.createElement('h4');
+  console.log(elemento);
+
+  let texto = document.createTextNode('Título h4');
+
+  console.log(texto);
+
+  //agrego el nodo texto hijo al padre h4 con appendChild()
+
+  //actualizar el DOM agregando la seccion h4
+
+  let codigo = '<h4 style=color:lime;> Titulo h4 </h4>';
+
+  document.getElementById('title').innerHTML = codigo;
+}
+
+
+function innertitle() {
+
+  let hache3 = document.getElementById('innertitle');
+
+  console.log(hache3.tagName);
+
+  hache3.innerText = 'Titulo desde JS';
+
+}
 
 

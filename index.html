@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javascript 1</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Menu3</a>
+      <a class="navbar-brand" href="#">Javascript</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,19 +38,28 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <div class="d-flex">
-          <div class="row">
-            <div class="col">Uno</div>
-            <div class="col">Uno</div>
-            <div class="col">Uno</div>
-            <div class="col">Uno</div>
-          </div>
-        </div>
       </div>
     </div>
   </nav>
 
   <main>
+
+    <section class="bg-primary-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-12 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Ejemplos de Javascript</h2>
+      <p class="bg-light-subtle rounded-5 px-3">
+        En este sitio vamos a ver distintas secciones con ejemplos en Javascript mostrados a través de la consola (console.log).
+      </p>
+
+      <p>
+        Links útiles
+      </p>
+
+      <div>
+        <a class="btn btn-primary" href="https://www.w3schools.com/js/default.asp" target="_blank">W3schools</a>
+        <a class="btn btn-primary" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Mozilla Docs</a>
+      </div>
+
+    </section> 
 
     <section class="border border-primary m-2 p-2 text-center">
       <h2 class="h2">Funciones para manipular Cadenas de Texto (String)</h2>
@@ -66,45 +76,45 @@
       <button onclick="parsear()">Parsear</button>
     </section>
 
-    <section class="border border-danger m-2 p-2 text-center">
-      <h2>Operadores Aritméticos</h2>
-      <button onclick="oper()">Operadores</button>
-      <button onclick="asignacion()">Asignacion</button>
+    <section class="bg-light-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Operadores Aritméticos</h2>
+      <button class="btn btn-primary" onclick="oper()">Operadores</button>
+      <button class="btn btn-primary" onclick="asignacion()">Asignacion</button>
+    </section> 
+
+    <section class="bg-light-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Operadores Comparación</h2>
+      <button class="btn btn-primary" onclick="compar()">Comparación</button>
     </section>
 
-    <section class="border border-success m-2 p-2 text-center rounded-5">
-      <h2>Comparación</h2>
-      <button onclick="compar()">Comparación</button>
+    <section class="bg-light-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Incremento y Decremento</h2>
+      <button class="btn btn-primary" onclick="incdec()">Incremento-Decremento</button>
     </section>
 
-    <section class="border border-primary m-2 p-2 text-center rounded-5">
-      <h2>Incremento y Decremento</h2>
-      <button onclick="incdec()">Incremento-Decremento</button>
+    <section class="bg-light-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Operadores Lógicos</h2>
+      <button class="btn btn-primary" onclick="log()">Lógicos</button>
     </section>
 
-    <section class="border border-danger m-2 p-2 text-center rounded-5">
-      <h2>Operadores Lógicos</h2>
-      <button onclick="log()">Logicos</button>
+    <section class="bg-success-subtle border border-success rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Condicional if</h2>
+      <button class="btn btn-success" onclick="iff()">if</button>
+    </section> 
+
+    <section class="bg-success-subtle border border-success rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">if-else</h2>
+      <button class="btn btn-success" onclick="ifelse()">if-else</button>
+    </section>
+    
+    <section class="bg-success-subtle border border-success rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Switch</h2>
+      <button class="btn btn-success" onclick="swi()">Switch</button>
     </section>
 
-    <section class="border border-success m-2 p-2 text-center rounded-5">
-      <h2>If</h2>
-      <button onclick="iff()">If</button>
-    </section>
-
-    <section class="border border-success m-2 p-2 text-center rounded-5">
-      <h2>If-Else</h2>
-      <button onclick="ifelse()">If-Else</button>
-    </section>
-
-    <section class="border border-success m-2 p-2 text-center rounded-5">
-      <h2>Switch</h2>
-      <button onclick="swi()">Switch</button>
-    </section>
-
-    <section class="border border-success m-2 p-2 text-center rounded-5">
-      <h2>Ternario</h2>
-      <button onclick="ter()">Ternario</button>
+    <section class="bg-success-subtle border border-success rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4 mt-2">Operador Ternario</h2>
+      <button class="btn btn-success" onclick="ter()">Ternario</button>
     </section>
 
     <section class="bg-primary-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
@@ -151,12 +161,23 @@
       <button onclick="elemid()" class="btn btn-primary">ElementById</button>
     </section>
 
+    <section class="bg-primary-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4">Crear Element</h2>
+      <p id="title">
+      </p>
+      <button onclick="crearAgregar()" class="btn btn-primary">Crear</button>
+    </section>
+
+    <section class="bg-primary-subtle border border-primary rounded-5 m-4 pt-2 pb-3 col-10 mx-auto text-center">
+      <h2 class="mb-4">Inner Text</h2>
+      <h3 id="innertitle">
+      </h3>
+      <button onclick="innertitle()" class="btn btn-primary">Crear</button>
+    </section>
+
+
   </main>
   
-
-
-
-
   <script src="assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
