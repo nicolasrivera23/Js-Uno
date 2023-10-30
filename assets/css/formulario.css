@@ -22,3 +22,8 @@ section {
 h2 {
   font-size: 3vw;
 }
+
+.fondo {
+  background: rgb(59,26,226);
+  background: linear-gradient(90deg, rgba(59,26,226,1) 0%, rgba(82,60,195,1) 83%, rgba(67,48,163,1) 100%);
+}

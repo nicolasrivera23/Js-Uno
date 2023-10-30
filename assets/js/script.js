@@ -1,6 +1,34 @@
 //constante ámbito/scope global
 const PI = 3.1416;
 
+function suma() {
+  console.log("Suma llamada desde el Event Listener = " + (30 + 5) );
+}
+
+function encimaCursor() {
+  console.log("Encima del elemento " + typeof(x));
+}
+
+function fueraCursor() {
+  console.log("Fuera del elemento " + typeof(x));
+  
+}
+
+function msjKeyPress() {
+  alert("Se presionó una tecla");
+}
+
+/*
+document.addEventListener(
+  "keypress", msjKeyPress
+);
+*/
+
+var x = document.getElementById('evhand');
+x.addEventListener("click", suma);
+x.addEventListener("mouseover", encimaCursor);
+x.addEventListener("mouseout" , fueraCursor);
+
 function preguntarNombre() {
   //declaramos una variable y le asignamos el valor que el usuario ingresa en el prompt
   let entrada = prompt('Ingresa tu nombre');
@@ -317,35 +345,6 @@ function whi() {
   }
 }
 
-function suma() {
-  console.log("Suma llamada desde el Event Listener = " + (30 + 5) );
-}
-
-function encimaCursor() {
-  console.log("Encima del elemento " + typeof(x));
-}
-
-function fueraCursor() {
-  console.log("Fuera del elemento " + typeof(x));
-  
-}
-
-function msjKeyPress() {
-  alert("Se presionó una tecla");
-}
-
-
-var x = document.getElementById('evhand');
-x.addEventListener("click", suma);
-x.addEventListener("mouseover", encimaCursor);
-x.addEventListener("mouseout" , fueraCursor);
-
-/*
-document.addEventListener(
-  "keypress", msjKeyPress
-);
-*/
-
 function funex() {
 
   //declaramos una variable del tipo let con el nombre resultado
@@ -405,23 +404,26 @@ function crearAgregar() {
   console.log(texto);
 
   //agrego el nodo texto hijo al padre h4 con appendChild()
+  elemento.appendChild(texto);
 
-  //actualizar el DOM agregando la seccion h4
+  //actualizar el DOM agregando la seccion h4 al párrafo con id title
+  document.getElementById('title').appendChild(elemento);
 
+  /*
+  Hace lo mismo pero usando innerHTML
   let codigo = '<h4 style=color:lime;> Titulo h4 </h4>';
-
   document.getElementById('title').innerHTML = codigo;
+  */
 }
 
 
 function innertitle() {
-
   let hache3 = document.getElementById('innertitle');
-
   console.log(hache3.tagName);
-
   hache3.innerText = 'Titulo desde JS';
-
 }
 
-
+function docwrite() {
+  let codigo = '<h4 style=color:lime;> Titulo h4 </h4>';
+  document.write(codigo);
+}
